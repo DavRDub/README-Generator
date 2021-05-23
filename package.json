@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DavRDub/README-Generator/issues"
   },
-  "homepage": "https://github.com/DavRDub/README-Generator#readme"
+  "homepage": "https://github.com/DavRDub/README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.0"
+  }
 }

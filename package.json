@@ -1,0 +1,19 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "Dynamically creating a README.md file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavRDub/README-Generator.git"
+  },
+  "author": "David Whitesel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavRDub/README-Generator/issues"
+  },
+  "homepage": "https://github.com/DavRDub/README-Generator#readme"
+}

@@ -13,37 +13,37 @@ const standardQuestions = () => {
           } else {
               return true;
           }
-      },  
+      }  
       
     },
     {
-        type = "input",
-        name = "title",
-        message = "Name the title of your current project.",
+        type: "input",
+        name: "title",
+        message: "Name the title of your current project.",
         validate(input){
             if(input===""){
                 return "You must enter a project title."
             } else {
                 return true;
             }
-        },  
+        }  
     },
     {
-        type = "input",
-        name = "emailaddress",
-        message = "Please enter your current email address.",
+        type: "input",
+        name: "emailaddress",
+        message: "Please enter your current email address.",
         validate(input){
             if(input==="") {
                 return "You must enter a email address.";
             } else {
                 return true;
             }
-        },
+        }
     },
     {
-        type = "input",
-        name = "Projectdescription",
-        message = "Provide a short description of your project.",
+        type: "input",
+        name: "Projectdescription",
+        message: "Provide a short description of your project.",
         validate(input) {
             if(input===""){
                 return "Please provide a description.";
@@ -53,35 +53,35 @@ const standardQuestions = () => {
         }
     },
     {
-        type = "input",
-        name = "implement",
-        message = "Please provide the steps required for implementing your project."
+        type: "input",
+        name: "implement",
+        message: "Please provide the steps required for implementing your project."
     },
     {
-        type = "input",
-        name = "applications",
-        message = "Provide a guide and a few examples showing off the applications of the project."
+        type: "input",
+        name: "applications",
+        message: "Provide a guide and a few examples showing off the applications of the project."
     },
     {
-        type = "input",
-        name = "features",
-        message = "Name a few features of the project."
+        type: "input",
+        name: "features",
+        message: "Name a few features of the project."
     },
     {
-        type = "input",
-        name = "Credit",
-        message = "Provide a list of any collaborators of the project, if any."
+        type: "input",
+        name: "Credit",
+        message: "Provide a list of any collaborators of the project, if any."
     },
     {
-        type = "input",
-        name = "Test",
-        message = "Please provide instructions for testing the project, if any."
+        type: "input",
+        name: "Test",
+        message: "Please provide instructions for testing the project, if any."
     },
     {
-        type = "list",
-        name = "License Selection",
-        message = "Please select a license.",
-        choices = ["MIT","GNU GPLv3","Apache"]
+        type: "list",
+        name: "License Selection",
+        message: "Please select a license.",
+        choices: ["MIT","GNU GPLv3","Apache"]
     },
 ])
 
@@ -90,7 +90,7 @@ const standardQuestions = () => {
 
     JSON.stringify(data, null, '/t')
 
-    fs.writeFile(fname.generateREADME(data,licenseBadge(data)), (err) =>
+    fs.writeFile(fname,generateREADME(data,licenseBadge(data)), (err) =>
     err ? console.log(data) : console.log("Successful!")
     );
 });

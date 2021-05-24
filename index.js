@@ -79,7 +79,7 @@ const standardQuestions = () => {
     },
     {
         type: "list",
-        name: "License Selection",
+        name: "License",
         message: "Please select a license.",
         choices: ["MIT","GNU GPLv3","Apache"]
     },
@@ -110,7 +110,7 @@ ${answers.description}
  - [Credits](#credits)
  - [Contributing](#contributing)
  - [Tests](#tests)
- - [License](#license)
+ - [License](#License)
  - [Questions](#questions)
 ## Installation
 ${answers.implement}
@@ -123,7 +123,7 @@ ${answers.Credit}
 ## Tests
 ${answers.Test}
 ## License
-This project is licensed under the ${answers.license} license.
+This project is licensed under the ${answers.License} license.
 ## Questions
 If you have any questions, please use the contact information below:  
 https://github.com/${answers.username}  
@@ -132,16 +132,16 @@ ${answers.email}
 
 function licenseBadge(answers) {
 
-    switch(answers.license) {
-        case 'MIT':
+    switch(answers.License) {
+        case "MIT":
             let badgeMIT = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
             return badgeMIT;
             break;
-        case 'GNU GPLv3':
+        case "GNU GPLv3":
             let badgeGNU = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
             return badgeGNU;
             break;
-        case 'Apache':
+        case "Apache":
             let badgeApache =  "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
             return badgeApache;
             break;

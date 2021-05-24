@@ -149,7 +149,7 @@ function licenseBadge(answers) {
 }
 
 function init() {
-    basicQuestions();
+    standardQuestions();
         
 }
 
